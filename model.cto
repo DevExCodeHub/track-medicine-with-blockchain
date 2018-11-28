@@ -1,0 +1,140 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * A business network for shipping medicines
+ * The cargo is temperature controlled and contracts
+ * can be negociated based on the temperature
+ * readings received for the cargo
+ */
+
+namespace org.acme.shipping.medicine
+
+/**
+ * The type of medicine product being shipped
+ */
+enum MedicineType {
+  o Antipyretics
+  o Analgesics
+  o Antibiotics
+}
+
+/**
+ * The status of a medicine
+ */
+enum MedicineStatus {
+  o CREATED
+  o IN_TRANSIT
+  o ARRIVED
+}
+
+/**
+ * An abstract transaction that is related to a Medicine
+ */
+abstract transaction MedicineTransaction {
+  --> Medicine medicine
+}
+
+/**
+ * A temperature reading for a medicine. E.g. received from a
+ * device within a temperature controlled shipping container
+ */
+transaction TemperatureReading extends MedicineTransaction {
+  o Double centigrade
+}
+
+/**
+ * A notification that a medicine has been received by the
+ * importer and that funds should be transferred from the importer
+ * to the exporter to pay for the medicine.
+ */
+transaction MedicineReceived extends MedicineTransaction {
+}
+
+/**
+ * A medicine being tracked as an asset on the ledger
+ */
+asset Medicine identified by medicineId {
+  o String medicineId
+  o MedicineType type
+  o String name
+  o String ingrediants
+  o String sideEffects
+  o MedicineStatus status
+  o Long unitCount
+  o TemperatureReading[] temperatureReadings optional
+  --> Contract contract
+}
+
+/**
+ * Defines a contract between an Exporter and an Importer to ship using
+ * a Shipper, paying a set unit price. The unit price is multiplied by
+ * a penality factor proportional to the deviation from the min and max
+ * negociated temperatures for the medicine.
+ */
+asset Contract identified by contractId {
+  o String contractId
+  --> Exporter exporter
+  --> Shipper shipper
+  --> Importer importer
+  o DateTime arrivalDateTime
+  o Double unitPrice
+  o Double minTemperature
+  o Double maxTemperature
+  o Double minPenaltyFactor
+  o Double maxPenaltyFactor
+}
+
+/**
+ * A concept for a simple street address
+ */
+concept Address {
+  o String city optional
+  o String country
+  o String street optional
+  o String zip optional
+}
+
+/**
+ * An abstract participant type in this business network
+ */
+abstract participant Business identified by email {
+  o String email
+  o Address address
+  o Double accountBalance
+}
+
+/**
+ * An Exporter is a type of participant in the network
+ */
+participant Exporter extends Business {
+}
+
+/**
+ * A Shipper is a type of participant in the network
+ */
+participant Shipper extends Business {
+}
+
+/**
+ * An Importer is a type of participant in the network
+ */
+participant Importer extends Business {
+}
+
+/**
+ * JUST FOR INITIALIZING A DEMO
+ */
+transaction SetupDemo {
+}
