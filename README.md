@@ -20,7 +20,7 @@
 ### STEP 2: Clone the repo
 1. Click `Clone or download` button. Then, `Download ZIP`.
 
-![screenshot 40](https://user-images.githubusercontent.com/37486654/49149268-b79cb580-f31a-11e8-8919-85d6dfbb36b5.png)
+<img width="288" alt="screenshot 40" src="https://user-images.githubusercontent.com/37486654/49149268-b79cb580-f31a-11e8-8919-85d6dfbb36b5.png">
 
 2. Right click on the downloaded `.zip` folder and click `Extract All`.
 
