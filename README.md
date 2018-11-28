@@ -38,7 +38,7 @@
 3.  Click on **Launch Now**
 4.  Click on **Deploy A New Business Network**
 5.  Click on **Drop here to upload or browse**
-6.  Choose `track-medicine.bna` file that you download
+6.  Choose `medicine-network.bna` file that you download
 7.  Click on **Deploy**
 8.  Click on **Connect now**
 9.  Click on **Test** from top menu
