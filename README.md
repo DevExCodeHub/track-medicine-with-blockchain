@@ -29,7 +29,7 @@
 ### 4. Test your blockchain network using IBM playground
 1.  From the left menu, Click on **Develop Code** under My Code Section
 2.  Click on **Try Web Playground**
-3.  Click on **Launch Noe**
+3.  Click on **Launch Now**
 4.  Click on **Deploy A New Business Network**
 5.  Click on **Drop here to upload or browse**
 6.  Choose `track-medicine.bna` file that you download
