@@ -26,7 +26,7 @@
 
 ### STEP 3: Create IBM Blockchain Service
 1. Create [IBM Blockchain Service](https://console.bluemix.net/catalog/services/blockchain)
-![dashboardibmcloudgooglec](https://user-images.githubusercontent.com/37486654/49149970-976df600-f31c-11e8-8db6-81784c3b386a.gif)
+<img width="288" alt="dashboardibmcloudgooglec" src="https://user-images.githubusercontent.com/37486654/49149970-976df600-f31c-11e8-8db6-81784c3b386a.gif">
 2. Click on **Launch Button**
 <img width="288" alt="screenshot 41" src="https://user-images.githubusercontent.com/37486654/49150191-2c70ef00-f31d-11e8-89d9-af0307a63efe.png">
 3. Click on **Got it**
