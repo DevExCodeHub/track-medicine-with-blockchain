@@ -58,13 +58,13 @@
         npm install -g generator-hyperledger-composer@0.20.x
        ```
 3. Deploy The Business Network
-1. Retrieve admin secret
+ 1. Retrieve admin secret
    * Go back to the blockchain main page
    * click on **Connection Profile** and then **download**. Rename the downloaded file to `connection-profile.json`
    * Move `connection-profile.json` file to be in the same directory as your `track-medicine.bna` file.
    * Inside the connection profile, search for `registrar`. Inside `registrar`, under `enrollId` there is an enrollSecret property. Copy the value.
    
-2. Creating a certificate authority card
+ 2. Creating a certificate authority card
    * Using the enrollSecret noted from step one, run the following command to create the CA business network card:
    ```
       composer card create -f ca.card -p connection-profile.json -u admin -s enrollSecret
@@ -81,11 +81,11 @@
    The composer identity request command creates a `credentials directory` that contains certificate .pem files.
 
    
-3. Adding the certificates to the Starter Plan instance
+ 3. Adding the certificates to the Starter Plan instance
     * In the main page, click on **Members** tab, then **Certificates**, then **Add Certificate**. Go to your `credentials directory`, and copy and paste the contents of the `admin-pub.pem` file in the certificate box. Submit the certificate and restart the peers. Note: restarting the peers takes a minute.
     * Click on **Channels** tab, then the **Actions** button, then **Sync Certificate** and **Submit**.
     
-4. Creating an admin business network card
+ 4. Creating an admin business network card
     * Create an admin card with the channel admin and peer admin roles by using the following command:
     ```
       composer card create -f adminCard.card -p connection-profile.json -u admin -c ./credentials/admin-pub.pem -k ./credentials/admin-priv.pem --role PeerAdmin --role ChannelAdmin
@@ -95,7 +95,7 @@
        composer card import -f adminCard.card -c adminCard
     ```
     
-5. Installing and starting the business network
+ 5. Installing and starting the business network
     * Install the Hyperledger Composer runtime with the following command:
      ```
         composer network install -c adminCard -a track-medicine.bna
@@ -114,14 +114,14 @@
        ```
           composer card import -f ./admin@track-medicine.card
        ```
-The business network is now deployed.
+   The business network is now deployed.
 
-6. Ping the business network to ensure it is running correctly
+ 6. Ping the business network to ensure it is running correctly
      ```
     composer network ping -c admin@vehicle-manufacture-network
     ```
     
-7. Explore your business network from network monitor
+ 7. Explore your business network from network monitor
 
    
    
