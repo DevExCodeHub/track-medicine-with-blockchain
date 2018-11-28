@@ -13,9 +13,9 @@
 2. Redeem Promo Code 
    * Click on **User Icon**
    * Click on **Profile**
-   * From the left menu, cLick on **Billing** 
+   * From the left menu, click on **Billing** 
    * Click on **Apply Code** under Feature (Promo) Codes
-   * Enter your promo code, then click on **Apply**
+   * Enter your promo code, click on **Apply**
 
 ### 2. Clone the repo
 1. Click `Clone or download` button. Then, `Download ZIP`.
