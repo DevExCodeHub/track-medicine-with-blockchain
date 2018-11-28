@@ -58,11 +58,11 @@
         npm install -g generator-hyperledger-composer@0.20.x
        ```
 3. Deploy The Business Network
-  1. Retrieve admin secret
-   * Go back to the blockchain main page
-   * click on **Connection Profile** and then **download**. Rename the downloaded file to `connection-profile.json`
-   * Move `connection-profile.json` file to be in the same directory as your `track-medicine.bna` file.
-   * Inside the connection profile, search for `registrar`. Inside `registrar`, under `enrollId` there is an enrollSecret property. Copy the value.
+                             1. Retrieve admin secret
+                                  * Go back to the blockchain main page
+                                  * click on **Connection Profile** and then **download**. Rename the downloaded file to `connection-profile.json`
+                                  * Move `connection-profile.json` file to be in the same directory as your `track-medicine.bna` file.
+                                  * Inside the connection profile, search for `registrar`. Inside `registrar`, under `enrollId` there is an enrollSecret property. Copy the value.
    
   2. Creating a certificate authority card
    * Using the enrollSecret noted from step one, run the following command to create the CA business network card:
