@@ -9,7 +9,7 @@
 
 
 ### 1. Sign up on IBM Cloud
-1. Sign up on [IBM Cloud] ()
+1. Sign up on [IBM Cloud] (https://ibm.biz/BdY7C7)
 2. Redeem Promo Code 
    * Click on **User Icon**
    * Click on **Profile**
@@ -41,5 +41,25 @@
 12. Click on **Submit**
 
 ### 5. Deploy your blockchain network (Optional)
+1. Prerequisite:
+Ensure that you install **Ubuntu Linux 14.04 / 16.04 LTS (both 64-bit), or Mac OS 10.12**, **Node**, **npm** and **Python**
+2. Set up your environment:
+   *  install composer-cli by using the following command:
+      ```
+       npm install -g composer-cli@0.20.x
+       ```
+   *  install composer-rest-server by using the following command:
+      ```
+        npm install -g composer-rest-server@0.20.x
+       ```
+   *  install generator-hyperledger-composer by using the following command:
+      ```
+        npm install -g generator-hyperledger-composer@0.20.x
+       ```
+   
+   
+   
+
+
 
  
