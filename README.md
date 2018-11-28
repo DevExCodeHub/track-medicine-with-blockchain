@@ -40,6 +40,6 @@
 11. Choose Set up Demo
 12. Click on **Submit**
 
-### 5. Deploy your blockchain network 
+### 5. Deploy your blockchain network (Optional)
 
  
