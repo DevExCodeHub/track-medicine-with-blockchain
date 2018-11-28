@@ -5,7 +5,7 @@
 2. [Clone the repo](#2-clone-the-repo)
 3. [Create IBM Blockchain Service](#3-create-ibm-blockchain-service)
 4. [Test your network using IBM playground](#4-test-your-blockchain-network-using-ibm-playground)
-5. [Deploy your blockchain network ](#5-deploy-your-blockchain-network )
+5. [Deploy your blockchain network ](#5-deploy-your-blockchain-network-optional )
 
 
 ### 1. Sign up on IBM Cloud
