@@ -83,11 +83,11 @@
 
    
   3. Adding the certificates to the Starter Plan instance
-    * In the main page, click on **Members** tab, then **Certificates**, then **Add Certificate**. Go to your `credentials directory`, and copy and paste the contents of the `admin-pub.pem` file in the certificate box. Submit the certificate and restart the peers. Note: restarting the peers takes a minute.
-    * Click on **Channels** tab, then the **Actions** button, then **Sync Certificate** and **Submit**.
+   * In the main page, click on **Members** tab, then **Certificates**, then **Add Certificate**. Go to your `credentials directory`, and copy and paste the contents of the `admin-pub.pem` file in the certificate box. Submit the certificate and restart the peers. Note: restarting the peers takes a minute.
+   * Click on **Channels** tab, then the **Actions** button, then **Sync Certificate** and **Submit**.
     
   4. Creating an admin business network card
-    * Create an admin card with the channel admin and peer admin roles by using the following command:
+   * Create an admin card with the channel admin and peer admin roles by using the following command:
     
     ```
          composer card create -f adminCard.card -p connection-profile.json -u admin -c ./credentials/admin-pub.pem -k ./credentials/admin priv.pem --role PeerAdmin --role ChannelAdmin
