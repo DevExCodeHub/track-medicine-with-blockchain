@@ -88,33 +88,36 @@
     
   4. Creating an admin business network card
     * Create an admin card with the channel admin and peer admin roles by using the following command:
+    
     ```
-      composer card create -f adminCard.card -p connection-profile.json -u admin -c ./credentials/admin-pub.pem -k ./credentials/admin-priv.pem --role PeerAdmin --role ChannelAdmin
+         composer card create -f adminCard.card -p connection-profile.json -u admin -c ./credentials/admin-pub.pem -k ./credentials/admin priv.pem --role PeerAdmin --role ChannelAdmin
     ```
-    * Import the card created in the previous step using the following command:
+   * Import the card created in the previous step using the following command:
+    
     ```
        composer card import -f adminCard.card -c adminCard
     ```
     
   5. Installing and starting the business network
     * Install the Hyperledger Composer runtime with the following command:
-     ```
-        composer network install -c adminCard -a track-medicine.bna
-     ```
-      Note the business network version number which is returned when you run this command. It will be required in the next step.
+        ```
+           composer network install -c adminCard -a track-medicine.bna
+        ```
+   Note the business network version number which is returned when you run this command. It will be required in the next step.
     * Start the business network with the command below. If you get an error, wait a minute and try again. Use the version number from the last step after the -V option.
-      ```
+     ```
          composer network start -c adminCard -n track-medicine -V 0.0.1 -A admin -C ./credentials/admin-pub.pem -f delete_me.card
-      ```
+     ```
     * Delete the business network card called delete_me.card.
     * Create a new business network card and reference the certificates that are retrieved earlier with the following command:
-       ```
+     ```
          composer card create -n track-medicine -p connection-profile.json -u admin -c ./credentials/admin-pub.pem -k ./credentials/admin-priv.pem
-       ```
-    * Import the business network card with the following command:
-       ```
+     ```
+       
+   * Import the business network card with the following command:
+     ```
           composer card import -f ./admin@track-medicine.card
-       ```
+     ```
    The business network is now deployed.
 
   6. Ping the business network to ensure it is running correctly
