@@ -9,7 +9,7 @@
 
 
 ### 1. Sign up on IBM Cloud
-1. Sign up on [IBM Cloud] (https://ibm.biz/BdY7C7)
+1. Sign up on [IBM Cloud](https://ibm.biz/BdY7C7)
 2. Redeem Promo Code 
    * Click on **User Icon**
    * Click on **Profile**
@@ -22,7 +22,7 @@
 2. Right click on the downloaded `.zip` folder and click `Extract All`.
 
 ### 3. Create IBM Blockchain Service
-1. Create [IBM Blockchain Service] (https://console.bluemix.net/catalog/services/blockchain)
+1. Create [IBM Blockchain Service](https://console.bluemix.net/catalog/services/blockchain)
 2. Click on **Launch Button**
 3. Click on **Got it**
 
