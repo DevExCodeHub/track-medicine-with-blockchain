@@ -19,12 +19,18 @@
 
 ### STEP 2: Clone the repo
 1. Click `Clone or download` button. Then, `Download ZIP`.
+
+![screenshot 40](https://user-images.githubusercontent.com/37486654/49149268-b79cb580-f31a-11e8-8919-85d6dfbb36b5.png)
+
 2. Right click on the downloaded `.zip` folder and click `Extract All`.
 
 ### STEP 3: Create IBM Blockchain Service
 1. Create [IBM Blockchain Service](https://console.bluemix.net/catalog/services/blockchain)
+![dashboardibmcloudgooglec](https://user-images.githubusercontent.com/37486654/49149970-976df600-f31c-11e8-8db6-81784c3b386a.gif)
 2. Click on **Launch Button**
+<img width="288" alt="screenshot 41" src="https://user-images.githubusercontent.com/37486654/49150191-2c70ef00-f31d-11e8-89d9-af0307a63efe.png">
 3. Click on **Got it**
+<img width="288" alt="screenshot 44" src="https://user-images.githubusercontent.com/37486654/49150238-51fdf880-f31d-11e8-82dd-372a285e08b1.png">
 
 ### STEP 4: Test your blockchain network using IBM playground
 1.  From the left menu, Click on **Develop Code** under My Code Section
