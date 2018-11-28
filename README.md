@@ -42,18 +42,18 @@
 
 ### 5. Deploy your blockchain network (Optional)
 1. Prerequisite:
-* Ensure that you install **Ubuntu Linux 14.04 / 16.04 LTS (both 64-bit) or Mac OS 10.12**, **Node**, **npm** and **Python**
+   * Ensure that you install **Ubuntu Linux 14.04 / 16.04 LTS (both 64-bit) or Mac OS 10.12**, **Node**, **npm** and **Python**
 
 2. Set up Your Environment:
-   *  Install composer-cli by using the following command:
+   * Install composer-cli by using the following command:
       ```
        npm install -g composer-cli@0.20.x
        ```
-   *  Install composer-rest-server by using the following command:
+   * Install composer-rest-server by using the following command:
       ```
         npm install -g composer-rest-server@0.20.x
        ```
-   *  Install generator-hyperledger-composer by using the following command:
+   * Install generator-hyperledger-composer by using the following command:
       ```
         npm install -g generator-hyperledger-composer@0.20.x
        ```
@@ -68,11 +68,12 @@
    * Using the enrollSecret noted from step one, run the following command to create the CA business network card:
    ```
       composer card create -f ca.card -p connection-profile.json -u admin -s enrollSecret
-      ```
+   ``` 
    * Import the card using the following command:
+   
    ```
       composer card import -f ca.card -c ca
-      ```
+   ```
    * Now that the card is imported, it can be used to exchange the enrollSecret for valid certificates from the CA. Run the following command to request certificates from the certificate authority:
    ```
    composer identity request --card ca --path ./credentials -u admin -s enrollSecret
@@ -99,7 +100,7 @@
     * Install the Hyperledger Composer runtime with the following command:
      ```
         composer network install -c adminCard -a track-medicine.bna
-      ```
+     ```
       Note the business network version number which is returned when you run this command. It will be required in the next step.
     * Start the business network with the command below. If you get an error, wait a minute and try again. Use the version number from the last step after the -V option.
       ```
@@ -109,7 +110,7 @@
     * Create a new business network card and reference the certificates that are retrieved earlier with the following command:
        ```
          composer card create -n track-medicine -p connection-profile.json -u admin -c ./credentials/admin-pub.pem -k ./credentials/admin-priv.pem
-        ```
+       ```
     * Import the business network card with the following command:
        ```
           composer card import -f ./admin@track-medicine.card
@@ -119,7 +120,7 @@
   6. Ping the business network to ensure it is running correctly
      ```
     composer network ping -c admin@vehicle-manufacture-network
-    ```
+     ```
     
   7. Explore your business network from network monitor
 
