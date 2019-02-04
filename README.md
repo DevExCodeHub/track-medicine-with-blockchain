@@ -12,8 +12,7 @@
 1. Sign up on [IBM Cloud](https://ibm.biz/Bd222S)
 2. Redeem Promo Code 
    * Click on **Manage**
-   * Click on **Account**
-   * Click on **Account settings**
+   * Click on **Account**, then pick **Account settings**
    * Scroll down to "Feature (Promo) Codes", then click on **Apply code** 
    * Enter your promo code, click on **Apply**
 
