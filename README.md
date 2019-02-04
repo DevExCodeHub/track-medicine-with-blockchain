@@ -1,27 +1,26 @@
 # track-medicine-with-blockchain
 # Steps
 
-1. [Sign up on IBM Cloud](#step-1-sign-up-on-ibm-cloud)
-2. [Clone the repo](#step-2-clone-the-repo)
+1. [Clone the repo](#step-1-clone-the-repo)
+2. [Sign up on IBM Cloud](#step-2-sign-up-on-ibm-cloud)
 3. [Create IBM Blockchain Service](#step-3-create-ibm-blockchain-service)
 4. [Test your network using IBM playground](#step-4-test-your-blockchain-network-using-ibm-playground)
 5. [Deploy your blockchain network ](#step-5-deploy-your-blockchain-network-optional )
 
+### STEP 1: Clone the repo
+1. Click `Clone or download` button. Then, `Download ZIP`.
 
-### STEP 1: Sign up on IBM Cloud
+<img width="288" alt="screenshot 40" src="https://user-images.githubusercontent.com/37486654/49149268-b79cb580-f31a-11e8-8919-85d6dfbb36b5.png">
+
+2. Right click on the downloaded `.zip` folder and click `Extract All`.
+
+### STEP 2: Sign up on IBM Cloud
 1. Sign up on [IBM Cloud](https://ibm.biz/Bd222S)
 2. Redeem Promo Code 
    * Click on **Manage**
    * Click on **Account**, then pick **Account settings**
    * Scroll down to "Feature (Promo) Codes", then click on **Apply code** 
    * Enter your promo code, click on **Apply**
-
-### STEP 2: Clone the repo
-1. Click `Clone or download` button. Then, `Download ZIP`.
-
-<img width="288" alt="screenshot 40" src="https://user-images.githubusercontent.com/37486654/49149268-b79cb580-f31a-11e8-8919-85d6dfbb36b5.png">
-
-2. Right click on the downloaded `.zip` folder and click `Extract All`.
 
 ### STEP 3: Create IBM Blockchain Service
 1. Create [IBM Blockchain Service](https://console.bluemix.net/catalog/services/blockchain)
