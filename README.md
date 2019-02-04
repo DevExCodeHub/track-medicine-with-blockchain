@@ -9,12 +9,12 @@
 
 
 ### STEP 1: Sign up on IBM Cloud
-1. Sign up on [IBM Cloud](https://ibm.biz/BdY7C7)
+1. Sign up on [IBM Cloud](https://ibm.biz/Bd222S)
 2. Redeem Promo Code 
-   * Click on **User Icon**
-   * Click on **Profile**
-   * From the left menu, click on **Billing** 
-   * Click on **Apply Code** under Feature (Promo) Codes
+   * Click on **Manage**
+   * Click on **Account**
+   * Click on **Account settings**
+   * Scroll down to "Feature (Promo) Codes", then click on **Apply code** 
    * Enter your promo code, click on **Apply**
 
 ### STEP 2: Clone the repo
@@ -29,7 +29,7 @@
 ![dashboardibmcloudgooglec](https://user-images.githubusercontent.com/37486654/49149970-976df600-f31c-11e8-8db6-81784c3b386a.gif)
 2. Click on **Launch Button**
 <img width="288" alt="screenshot 41" src="https://user-images.githubusercontent.com/37486654/49150191-2c70ef00-f31d-11e8-89d9-af0307a63efe.png">
-3. Click on**Got it**
+3. Click on **Got it**
 
 <img width="288" alt="screenshot 44" src="https://user-images.githubusercontent.com/37486654/49150238-51fdf880-f31d-11e8-82dd-372a285e08b1.png">
 
